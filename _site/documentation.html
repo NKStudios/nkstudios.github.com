@@ -47,6 +47,21 @@
 	<div id="sidebar"></div>
 	<div id="content">
 		<p>Tools, libraries and services that work nicely with Impact.</p>
+<h2 id='module-definition'>Module Definition</h2><pre class='javascript'>
+ig.module( 
+	'game.my-file' 
+)
+.requires(
+	'impact.game',
+	'impact.image',
+	'game.other-file'
+)
+.defines(function(){
+
+	// code for this module
+
+});
+</pre>
 	</div>
 	<div class="clear"></div>
 </div>

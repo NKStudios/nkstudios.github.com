@@ -47,8 +47,21 @@
 	<div id="sidebar"></div>
 	<div id="content">
 		<p>Impact is a JavaScript Game Engine that allows you to develop stunning HTML5 Games for desktop and mobile browsers.</p>
+<h2 id='module-definition'>Module Definition</h2><pre class='javascript'>
+ig.module( 
+	'game.my-file' 
+)
+.requires(
+	'impact.game',
+	'impact.image',
+	'game.other-file'
+)
+.defines(function(){
 
-<p>Liquid error: No such file or directory - pygmentize</p>
+	// code for this module
+
+});
+</pre>
 	</div>
 	<div class="clear"></div>
 </div>
