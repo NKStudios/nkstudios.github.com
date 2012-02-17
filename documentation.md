@@ -1,24 +1,24 @@
 ---
 layout: default
-title: Documentation - Impact
+title: Documentation - NKStudios
 breadcrumbs: Documentation
 breadcrumbsclass: content
 ---
-Tools, libraries and services that work nicely with Impact.
+Documentation Center.
 
-<h2 id="module-definition">Module Definition</h2>
-<pre class="javascript">
-ig.module( 
-	'game.my-file' 
-)
-.requires(
-	'impact.game',
-	'impact.image',
-	'game.other-file'
-)
-.defines(function(){
+##Description
+##Properties
+##Module Definition
+##Main Function
 
-	// code for this module
-
-});
+<pre class="actionscript">
+    m_cfgPathList = new Array();
+    m_cfgContentList = new Array();
+    m_mgrPlugin = new PluginManager();
+    super();
+    
+    if (m_object is Object)
+    {
+    	trace("here is test!");
+    }
 </pre>
