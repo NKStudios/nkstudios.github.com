@@ -1,5 +1,5 @@
 module Jekyll
-	module BreadcrumbsFilter
+  module Filters
 	
 	  # Return the url's breadcrumbs
 	  def breadcrumbs(url)    
@@ -44,5 +44,3 @@ module Jekyll
 	  
 	end
 end
-
-Liquid::Template.register_filter(Jekyll::BreadcrumbsFilter)
