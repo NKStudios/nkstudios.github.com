@@ -35,7 +35,7 @@ module Jekyll
 	  
 	  # Return the breadcrumbs class by url
 	  def breadcrumbs_class(url)
-	  	return url
+	  	return "xxoo-" + url
 	  	
 	  	if url == '/index.html'
 	  		return "main"
