@@ -1,4 +1,3 @@
-require 'liquid'
 module Jekyll
 	module BreadcrumbsFilter
 	
@@ -35,7 +34,9 @@ module Jekyll
 	  end
 	  
 	  # Return the breadcrumbs class by url
-	  def breadcrumbs_class(url)  		
+	  def breadcrumbs_class(url)
+	  	return url
+	  	
 	  	if url == '/index.html'
 	  		return "main"
 	  	else
