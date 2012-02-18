@@ -3,8 +3,6 @@ module Jekyll
 	
 	  # Return the url's breadcrumbs
 	  def breadcrumbs(url)    
-	  	return "xxoo-" + url
-	  	
 		@name_arr = url.split("/")
 		@arr_len = @name_arr.length()
 	
@@ -37,8 +35,6 @@ module Jekyll
 	  
 	  # Return the breadcrumbs class by url
 	  def breadcrumbs_class(url)
-	  	return "xxoo-" + url
-	  	
 	  	if url == '/index.html'
 	  		return "main"
 	  	else
