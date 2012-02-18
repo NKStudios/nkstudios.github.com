@@ -2,7 +2,6 @@
 layout: default
 title: Documentation - NKStudios
 breadcrumbs: Documentation
-breadcrumbsclass: content
 ---
 New here? The [Create a Game](http://google.com) video and the [Installation & Getting Started](http://google.com) tutorial are probably a good starting point. They give you an overview of how to build a game with the engine.
 
