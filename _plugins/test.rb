@@ -1,9 +1,15 @@
 module Jekyll
-  module Filters
-    def asset_url(input)      
-      return "http://www.example.com/#{input}?#{Time.now.to_i}"
+  class RenderTimeTag < Liquid::Tag
+
+    def initialize(tag_name, text, tokens)
+      super
+      @text = text
+    end
+
+    def render(context)
+      "#{@text} #{Time.now}"
     end
   end
 end
 
-Liquid::Template.register_filter(Jekyll::Filters)
+Liquid::Template.register_tag('render_time', Jekyll::RenderTimeTag)
