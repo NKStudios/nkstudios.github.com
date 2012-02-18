@@ -1,9 +1,7 @@
 module Jekyll
-  module AssetFilter
+  module Filters
     def asset_url(input)      
       return "http://www.example.com/#{input}?#{Time.now.to_i}"
     end
   end
 end
-
-Liquid::Template.register_filter(Jekyll::AssetFilter)
