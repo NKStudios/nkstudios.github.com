@@ -9,15 +9,17 @@
 	<script type="text/javascript" src="/templates/impact/jquery-1.4.3.min.js"></script>
 	<script type="text/javascript" src="/templates/impact/impact.js?v5></script>
 	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-571256-10']);
-		_gaq.push(['_trackPageview']);
-		
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gs, s);
-		})();
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-29509948-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
 	</script>
 </head>
 	
@@ -50,8 +52,12 @@
 <div class="wideContent">
 	<div id="sidebar">
 		<h2>Class Reference</h2><ul>
-<li><a href="/documentation/class-reference/log-system.html">Log System</a></li>
+<li><a href="/documentation/class-reference/ui-system.html">Ui System</a></li>
+<li><a href="/documentation/class-reference/tips-manager.html">Tips Manager</a></li>
 <li><a href="/documentation/class-reference/sound-manager.html">Sound Manager</a></li>
+<li><a href="/documentation/class-reference/menu-manager.html">Menu Manager</a></li>
+<li><a href="/documentation/class-reference/log-system.html">Log System</a></li>
+<li><a href="/documentation/class-reference/cursor-manager.html">Cursor Manager</a></li>
 </ul>
 <div id="fragmentMenu">
 	<h2>Sound Manager</h2>
@@ -69,7 +75,11 @@
 <li><code>SoundManagerName.SFX</code> - use for fx sound.</li>
 </ul>
 
-<p>Normaly you use <code>SoundManager</code> like this: <pre class='actionscript'>
+<p><code>SoundManager</code> initialize like this: <pre class='actionscript'>
+SoundManager.getSoundManager(SoundManagerName.SFX)
+SoundManager.getSoundManager(SoundManagerName.SFX)
+</pre></p>
+<pre class='actionscript'>
 import com.tencent.fge.engine.sound.SoundManager;
 import com.tencent.fge.engine.sound.SoundPlayer;
 import com.tencent.tnt.sound.SoundManagerName;<br />
@@ -95,8 +105,7 @@ class TestA
 		}
 	}
 }
-</pre></p>
-
+</pre>
 <h2 id='main_static_function'>Main Static Function</h2>
 
 <h3 id='getsoundmanager'>getSoundManager()</h3>
